@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+:root {
+    --black:#21213e;
+    --red: rgb(255, 0, 0);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 4rem 11%;
+}
+
+body {
+    background: rgb(237, 235, 235);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    border: none;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    color: white;
+    cursor: pointer;
+    background: rgb(238, 43, 164);
+    box-shadow: 0 .5rem 1rem rgba(239, 2, 172, 0.7);
+    padding: .8rem 3rem;
+}
+
+.btn:hover {
+    background-color: rgb(78, 158, 237);
+    color: black;
+    box-shadow: 0 .5rem 1rem rgba(10, 82, 183, 0.7);
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+header .logo img {
+    width: 70px;
+    vertical-align: middle;
+}
+
+
+header .navbar a {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+header .navbar a:hover {
+    color: var(--red)
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: var(--red)
+}
+
+#menu-bar {
+    font-size: 2.5rem;
+    padding: .5rem 1.5rem;
+    border: .1rem solid var(--black);
+    color: var(--black);
+    border-radius: .3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.main {
+    padding: 0;
+    position: relative;
+}
+
+.main .slide-container .slide {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 9%;
+}
+
+.main .slide-container .slide .content {
+    flex: 1 1 40rem;
+    animation: slideContent .3s linear 1s backwards;
+}
+
+@keyframes slideContent {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+}
+
+.main .slide-container .slide .image {
+    flex: 1 1 40rem;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.main .slide-container .slide .image .shoe {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 .7rem 1rem .5rem rgba(55, 54, 54, 0.5);
+    animation: shoe .5s linear;
+}
+
+@keyframes shoe {
+    0%{
+        transform: rotate(0deg) scale(.5);
+    }
+}
+
+.main .slide-container .slide .content span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(8, 6, 119);
+    text-transform: uppercase;
+}
+
+.main .slide-container .slide .content h1 {
+    font-size: 5.5rem;
+    color: var(--black);    
+}
+
+.main .slide-container .slide .content p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: rgb(13, 9, 50);    
+    padding: .5rem 0;
+    text-transform: none;
+}
+
+.main .slide-container:nth-child(1) .slide {
+    background: url(../Images/free-png.ru-445.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.6rem;
+}
+
+.main .slide-container:nth-child(2) .slide {
+    background: url(../Images/free-png.ru-445.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.6rem;
+}
+
+.main .slide-container:nth-child(3) .slide {
+    background: url(../Images/free-png.ru-445.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.6rem;
+}
+
+.main .slide-container:nth-child(4) .slide {
+    background: url(../Images/free-png.ru-445.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3.6rem;
+}
+
+.main .slide-container {
+    display: none;
+}
+
+.main .slide-container.active {
+    display: block;
+}
+
+.main #prev,
+.main #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: 100;
+    width: 5rem;
+    height: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: black;
+    border: .2rem solid black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main #prev:hover,
+.main #next:hover {
+    color: white;
+    background: rgb(238, 43, 164);
+}
+
+.main #prev {
+    left: 3rem;
+}
+
+.main #next {
+    right: 3rem;
+}
+
+.servise .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: white;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.servise .box-container .box {
+    text-align: center;
+    flex: 1 1 30rem;
+}
+
+.servise .box-container .box i {
+    font-size: 4rem;
+    color: blue;
+}
+
+.servise .box-container .box h3 {
+    font-size: 2rem;
+    color: black;
+    padding-top: 1rem;
+}
+
+.servise .box-container .box p {
+    font-size: 1.5rem;
+    color: rgb(114, 114, 118);
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* medio cueries */
+
+@media (max-width:991px){
+
+html {
+    font-size: 55%;
+}
+header{
+    padding: 2rem;
+}
+section {
+    padding: 2rem;
+}
+}
+
+@media (max-width:768px){
+
+#menu-bar{
+    display: block;
+}
+header .navbar {
+    position: absolute;
+    top: 100%; left: -120%;
+    width: 100%;
+    background: rgb(237, 235, 235);
+    border-top: .1rem solid rgb(0, 0, 0, .1);       
+}
+header .navbar.active{
+    left: 0;
+}
+
+header .navbar a {
+    font-size: .2rem;
+    background: white;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    display: block;
+    text-align: center;
+}
+
+.main #prev,
+    .main #next {
+    top: 60%;
+
+}
+
+@media (max-width:400px){
+
+    html {
+        font-size: 50%;
+    }
+
+    
+    }
+}
