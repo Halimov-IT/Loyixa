@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
 :root {
-    --black:#21213e;
-    --red: rgb(255, 0, 0);
+    --black: rgb(0, 0, 0);
+    --orang: rgb(255, 132, 0);
 }
 
 *{
@@ -46,7 +46,7 @@ body {
 
 .btn:hover {
     background-color: rgb(78, 158, 237);
-    color: black;
+    color:var(--black);
     box-shadow: 0 .5rem 1rem rgba(10, 82, 183, 0.7);
 }
 
@@ -59,18 +59,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(210, 113, 3, 0.331);
 }
 
 header .logo {
     font-size: 2.5rem;
+    text-transform: uppercase;
     font-weight: 700;
-    color: var(--black);
+    color:var(--black);
 }
 
-header .logo img {
-    width: 70px;
-    vertical-align: middle;
+header .logo span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:var(--orang);
 }
 
 
@@ -81,7 +84,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-    color: var(--red)
+    color: var(--orang)
 }
 
 header .icons a {
@@ -91,14 +94,14 @@ header .icons a {
 }
 
 header .icons a:hover {
-    color: var(--red)
+    color: var(--orang)
 }
 
 #menu-bar {
     font-size: 2.5rem;
     padding: .5rem 1.5rem;
     border: .1rem solid var(--black);
-    color: var(--black);
+    color: var(--orang);
     border-radius: .3rem;
     cursor: pointer;
     display: none;
@@ -327,23 +330,27 @@ section {
 header .navbar {
     position: absolute;
     top: 100%; left: -120%;
-    width: 100%;
-    background: rgb(237, 235, 235);
-    border-top: .1rem solid rgb(0, 0, 0, .1);       
+    width: 60%;
+    background: rgba(255, 255, 254, 0.828);
+    border-top: .1rem solid rgb(0, 0, 0, .1);
+    border-radius: 2rem;       
 }
 header .navbar.active{
     left: 0;
 }
 
 header .navbar a {
-    font-size: .2rem;
-    background: white;
-    border: .1rem solid black;
-    border-radius: .5rem;
-    padding: 1.5rem;
-    margin: 1.5rem;
+    font-size: 2rem;
+    background: none;
+    border-radius: 3rem;
+    padding: 1rem;
+    margin: 1rem;
     display: block;
     text-align: center;
+}
+
+header .navbar a:hover {
+    background: rgba(244, 211, 179, 0.852);
 }
 
 .main #prev,
