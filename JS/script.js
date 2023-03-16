@@ -11,17 +11,21 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-let slides = document.querySelectorAll('.slide-container');
-let index = 0;
-
-function next(){
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}
-
-function prev(){
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
-}
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: -5,
+      stretch: 0,
+      depth: 120,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+  });

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+/* main style */
 
 :root {
     --black: rgb(0, 0, 0);
@@ -12,7 +13,7 @@
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .1s linear;
+    transition: .2s linear;
 }
 
 html {
@@ -22,34 +23,18 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    padding: 4rem 11%;
-}
+
 
 body {
     background: rgb(237, 235, 235);
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    border: none;
-    font-weight: bolder;
-    font-size: 1.7rem;
-    color: white;
-    cursor: pointer;
-    background: rgb(238, 43, 164);
-    box-shadow: 0 .5rem 1rem rgba(239, 2, 172, 0.7);
-    padding: .8rem 3rem;
+section {
+    padding: 2rem 9%;
 }
 
-.btn:hover {
-    background-color: rgb(78, 158, 237);
-    color:var(--black);
-    box-shadow: 0 .5rem 1rem rgba(10, 82, 183, 0.7);
-}
 
+/* header style */
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -100,192 +85,87 @@ header .icons a:hover {
 #menu-bar {
     font-size: 2.5rem;
     padding: .5rem 1.5rem;
-    border: .1rem solid var(--black);
+    border: .2rem solid var(--black);
     color: var(--orang);
-    border-radius: .3rem;
+    border-radius: .2rem;
     cursor: pointer;
     display: none;
 }
 
-.main {
-    padding: 0;
-    position: relative;
-}
 
-.main .slide-container .slide {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 0 9%;
-}
+/* home style */
 
-.main .slide-container .slide .content {
-    flex: 1 1 40rem;
-    animation: slideContent .3s linear 1s backwards;
-}
 
-@keyframes slideContent {
-    0%{
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
+.home .content {
+    padding-top: 10rem;
+    margin: 2rem auto;
+    max-width: 70rem;
 }
-
-.main .slide-container .slide .image {
-    flex: 1 1 40rem;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-}
-
-.main .slide-container .slide .image .shoe {
-    width: 100%;
-    border-radius: 2rem;
-    box-shadow: 0 .7rem 1rem .5rem rgba(55, 54, 54, 0.5);
-    animation: shoe .5s linear;
-}
-
-@keyframes shoe {
-    0%{
-        transform: rotate(0deg) scale(.5);
-    }
-}
-
-.main .slide-container .slide .content span {
-    font-size: 2rem;
-    font-weight: 900;
-    color: rgb(8, 6, 119);
+.home .content h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--black);
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
-.main .slide-container .slide .content h1 {
-    font-size: 5.5rem;
-    color: var(--black);    
-}
-
-.main .slide-container .slide .content p {
-    font-size: 1.7rem;
-    font-weight: 500;
-    line-height: 3rem;
-    color: rgb(13, 9, 50);    
-    padding: .5rem 0;
-    text-transform: none;
-}
-
-.main .slide-container:nth-child(1) .slide {
-    background: url(../Images/free-png.ru-445.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 3.6rem;
-}
-
-.main .slide-container:nth-child(2) .slide {
-    background: url(../Images/free-png.ru-445.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 3.6rem;
-}
-
-.main .slide-container:nth-child(3) .slide {
-    background: url(../Images/free-png.ru-445.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 3.6rem;
-}
-
-.main .slide-container:nth-child(4) .slide {
-    background: url(../Images/free-png.ru-445.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 3.6rem;
-}
-
-.main .slide-container {
-    display: none;
-}
-
-.main .slide-container.active {
-    display: block;
-}
-
-.main #prev,
-.main #next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    z-index: 100;
-    width: 5rem;
-    height: 5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
-    color: black;
-    border: .2rem solid black;
-    cursor: pointer;
-    text-align: center;
-}
-
-.main #prev:hover,
-.main #next:hover {
-    color: white;
-    background: rgb(238, 43, 164);
-}
-
-.main #prev {
-    left: 3rem;
-}
-
-.main #next {
-    right: 3rem;
-}
-
-.servise .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    background: white;
-    border: .1rem solid black;
-    border-radius: .5rem;
-    padding: 2rem;
-}
-
-.servise .box-container .box {
-    text-align: center;
-    flex: 1 1 30rem;
-}
-
-.servise .box-container .box i {
+.home .content h3 span {
+    padding-bottom: 2rem;
+    color: var(--orang);
     font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.mySwiper {
+    border: .5rem solid white;
+    box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
+    padding: .5rem;
+}
+.home .mySwiper .swiper-slide {
+    overflow: hidden;
+    border-radius: .3rem;
+    box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
+    height: 25rem;
+    width: 30.9rem;
+}
+
+.home .mySwiper .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.home .mySwiper .swiper-slide .slide-content {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    background: rgba(255, 255, 255, 0.598);
+}
+
+.home .mySwiper .swiper-slide .slide-content h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home .mySwiper .swiper-slide .slide-content a {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--orang);
+    background: none;
+    margin-top: .5rem;
+    
+}
+
+.home .mySwiper .swiper-slide .slide-content a:hover {
     color: blue;
 }
-
-.servise .box-container .box h3 {
-    font-size: 2rem;
-    color: black;
-    padding-top: 1rem;
-}
-
-.servise .box-container .box p {
-    font-size: 1.5rem;
-    color: rgb(114, 114, 118);
-    padding: 1rem 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -330,10 +210,9 @@ section {
 header .navbar {
     position: absolute;
     top: 100%; left: -120%;
-    width: 60%;
-    background: rgba(255, 255, 254, 0.828);
-    border-top: .1rem solid rgb(0, 0, 0, .1);
-    border-radius: 2rem;       
+    width: 50%;
+    background: rgba(226, 226, 224, 0.828);
+    border-radius: .5rem;       
 }
 header .navbar.active{
     left: 0;
@@ -342,29 +221,25 @@ header .navbar.active{
 header .navbar a {
     font-size: 2rem;
     background: none;
-    border-radius: 3rem;
-    padding: 1rem;
-    margin: 1rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: .5rem;
     display: block;
-    text-align: center;
 }
 
 header .navbar a:hover {
     background: rgba(244, 211, 179, 0.852);
 }
 
-.main #prev,
-    .main #next {
-    top: 60%;
-
-}
 
 @media (max-width:400px){
 
     html {
         font-size: 50%;
     }
-
+    .home .home-slider .swiper-slide {
+        width: 27rem;
+    }       
     
     }
 }

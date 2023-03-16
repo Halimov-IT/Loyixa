@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta  name="viewport" charset="width=devise-width, initial-scale=1.0">
     <title>Bir darcha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/main.css">
 </head>
@@ -16,104 +17,108 @@
     <nav class="navbar">
         <a href="#">Asosiy</a>
         <a href="#">Xizmatlar</a>
+        <a href="#">Izoh</a>
         <a href="#">bog`lanish</a>
     </nav>
-    <div class="icons">
-        <a href="#" class="fas fa-search"></a>
-        <a href="#" class="fas fa-heart"></a>
-    </div>
 
 </header>
 <!--/Header section-->
 
 <!--Main section-->
-<section id="main" class="main">
-    <div class="slide-container active">
-        <div class="slide">
-            <div class="content">
-                <span>xizmatlar</span>
-                <h1>Raqamli xizmatlar</h1>
-                <p>
-                    Iqtisodiy hamda xisob-kitob, davlat tashkilotlari bilan bog`liq, xususiy savdoyingizni rivojlantirish va ommaga targ`ib qilish, reklama va marketing xizmatlarida yordam beruvchi xususiy firmalar va xizmatlar
-                </p>
-                <a href="#" class="btn">Bo`limga o`tish</a>
-            </div>
-            <div class="image">
-                <img src="./Images/financni_plan_big.jpeg" class="shoe" alt="icon1">
-            </div>
-        </div>
-    </div>
-    <div class="slide-container">
-        <div class="slide">
-            <div class="content">
-                <span>xizmatlar</span>
-                <h1>Restoran xizmatlari</h1>
-                <p>
-                    Iqtisodiy hamda xisob-kitob, davlat tashkilotlari bilan bog`liq, xususiy savdoyingizni rivojlantirish va ommaga targ`ib qilish, reklama va marketing xizmatlarida yordam beruvchi xususiy firmalar va xizmatlar
-                </p>
-                <a href="#" class="btn">Bo`limga o`tish</a>
-            </div>
-            <div class="image">
-                <img src="./Images/restoran.jpeg" class="shoe" alt="icon2">
-            </div>
-        </div>
-    </div>
-    <div class="slide-container">
-        <div class="slide">
-            <div class="content">
-                <span>xizmatlar</span>
-                <h1>Mehmonxona xizmatlari</h1>
-                <p>
-                    Iqtisodiy hamda xisob-kitob, davlat tashkilotlari bilan bog`liq, xususiy savdoyingizni rivojlantirish va ommaga targ`ib qilish, reklama va marketing xizmatlarida yordam beruvchi xususiy firmalar va xizmatlar
-                </p>
-                <a href="#" class="btn">Bo`limga o`tish</a>
-            </div>
-            <div class="image">
-                <img src="./Images/Hotel.jpeg" class="shoe" alt="icon3">
-            </div>
-        </div>
-    </div>
-    <div class="slide-container">
-        <div class="slide">
-            <div class="content">
-                <span>xizmatlar</span>
-                <h1>Avto ta`mirlash xizmatlari</h1>
-                <p>
-                    Iqtisodiy hamda xisob-kitob, davlat tashkilotlari bilan bog`liq, xususiy savdoyingizni rivojlantirish va ommaga targ`ib qilish, reklama va marketing xizmatlarida yordam beruvchi xususiy firmalar va xizmatlar
-                </p>
-                <a href="#" class="btn">Bo`limga o`tish</a>
-            </div>
-            <div class="image">
-                <img src="./Images/autoservis1.jpeg" class="shoe" alt="icon4">
-            </div>
-        </div>
-    </div>
 
-    <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
-    <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+<section id="home" class="home">
+    <div class="content">
+        <h3>Biz taklif qiladigan <span>Xizmatlar</span></h3>
+    </div>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Images/finance.3.jpeg" />
+            <div class="slide-content">
+                <h3>Raqamli Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/finance.4.jpeg" />
+            <div class="slide-content">
+                <h3>Raqamli Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/finance.5.jpeg" />
+            <div class="slide-content">
+                <h3>Raqamli Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/Restoran.1.jpeg" />
+            <div class="slide-content">
+                <h3>Restoran Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/restoran.3.jpeg" />
+            <div class="slide-content">
+                <h3>Restoran Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/restoran.4.jpeg" />
+            <div class="slide-content">
+                <h3>Restoran Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/hotel.3.jpeg" />
+            <div class="slide-content">
+                <h3>Mehmonxona Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/hotel.4.jpeg" />
+            <div class="slide-content">
+                <h3>Mehmonxona Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/hotel.2.jpeg" />
+            <div class="slide-content">
+                <h3>Mehmonxona Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/avtoservice.3.jpeg" />
+            <div class="slide-content">
+                <h3>Avtoservis Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./Images/Mobile4.jpeg" />
+            <div class="slide-content">
+                <h3>Avtoservis Xizmatlar</h3>
+                <a href="#" class="btn">Batavsil...</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 </section>
+
 <!--/Main section-->
 
 <!--srvise section-->
-<section class="servise">
-    <div class="box-container">
-        <div class="box">
-            <i class="fa-sharp fa-solid fa-handshake"></i>
-            <h3>Reklama va elonlar uchun</h3>
-            <p>O`z biznesingizni rivojlantirishda xamkorlik, reklama va elonlar berishingiz mumkin</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-headset"></i>
-            <h3>Xizmatlar 24 x 7</h3>
-            <p>Ushbu sayt servis xizmatlar va ma`lumotlar uchun xaftaning xar kuni 24 soat mobaynida murojaat qilishingiz mumkin</p>
-        </div>
-        <div class="box">
-            <i class="fas fa-heart"></i>
-            <h3>Xursand mijozlar</h3>
-            <p>Biz bilan aloqada bo`ling</p>
-        </div>
-    </div>
-</section>
+
 <!--/servise section-->
 
 <!--Contact section-->
@@ -149,7 +154,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <!--costom js file link-->
 <script src="js/script.js"></script>
 
