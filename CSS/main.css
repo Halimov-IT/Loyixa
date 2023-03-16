@@ -33,6 +33,22 @@ section {
     padding: 2rem 9%;
 }
 
+.textheading {
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--black);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.textheading span {
+    padding-top: 2rem;
+    color: var(--orang);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+
 
 /* header style */
 header {
@@ -44,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 .5rem 1rem rgba(210, 113, 3, 0.331);
+    box-shadow: 0 .5rem 1rem rgba(185, 184, 182, 0.331);
 }
 
 header .logo {
@@ -97,36 +113,19 @@ header .icons a:hover {
 
 
 .home .content {
-    padding-top: 10rem;
+    padding-top: 4rem;
     margin: 2rem auto;
     max-width: 70rem;
 }
-.home .content h3 {
-    text-align: center;
-    padding-bottom: 2rem;
-    color: var(--black);
-    font-size: 4rem;
-    text-transform: uppercase;
-}
 
-.home .content h3 span {
-    padding-bottom: 2rem;
-    color: var(--orang);
-    font-size: 4rem;
-    text-transform: uppercase;
-}
 
-.mySwiper {
-    border: .5rem solid white;
-    box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
-    padding: .5rem;
-}
+
 .home .mySwiper .swiper-slide {
     overflow: hidden;
     border-radius: .3rem;
     box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
-    height: 25rem;
-    width: 30.9rem;
+    height: 20rem;
+    width: 30rem;
 }
 
 .home .mySwiper .swiper-slide img {
@@ -167,6 +166,55 @@ header .icons a:hover {
     color: blue;
 }
 
+/* Service style */
+.service .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.service .box-container .box {
+    border: .1rem solid rgba(69, 67, 67, 0.537);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    flex: 1 1 30rem;
+}
+
+.service .box-container .box .container {
+    padding: 1.5rem;
+}
+
+.service .box-container .box img {
+    height: 14rem;
+    width: 28rem;
+    margin-top: 1rem;
+    background-size: contain;
+    border-radius: .5rem;
+}
+
+.service .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+
+.service .box-container .box .container h3 {
+    font-size: 2rem;
+    color: black;
+    margin-top: .5rem;
+    text-transform: capitalize;
+}
+
+.service .box-container .box .container p {
+    font-size: 1.5rem;
+    color: var(--orang);
+    text-transform: capitalize;
+}
+
+
 
 
 
@@ -189,7 +237,7 @@ header .icons a:hover {
 
 /* medio cueries */
 
-@media (max-width:991px){
+@media (max-width:1024px){
 
 html {
     font-size: 55%;
@@ -228,11 +276,12 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-    background: rgba(244, 211, 179, 0.852);
+    background: rgba(185, 184, 183, 0.852);
+    margin-left: 1.5rem;
 }
 
 
-@media (max-width:400px){
+@media (max-width:500px){
 
     html {
         font-size: 50%;
@@ -240,6 +289,12 @@ header .navbar a:hover {
     .home .home-slider .swiper-slide {
         width: 27rem;
     }       
+    .textheading {
+        font-size: 2rem;   
+    }   
     
+    .textheading span {
+        font-size: 2rem;
+    }
     }
 }
