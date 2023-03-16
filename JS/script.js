@@ -19,13 +19,13 @@ var swiper = new Swiper(".mySwiper", {
     coverflowEffect: {
       rotate: -5,
       stretch: 0,
-      depth: 120,
+      depth: 100,
       modifier: 2,
       slideShadows: true,
     },
     loop: true,
     autoplay: {
-        delay: 3500,
+        delay: 5000,
         disableOnInteraction: false,
     },
   });
