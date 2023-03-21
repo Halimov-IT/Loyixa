@@ -28,7 +28,7 @@ section {
 }
 .textheading {
     text-align: center;
-    padding: 2rem;
+    padding: 5rem;
     color: var(--black);
     font-size: 2.5rem;
     font-weight: 900;
@@ -66,7 +66,7 @@ header .logo span {
     color:var(--orang);
 }
 header .navbar a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     margin: 0 1rem;
 }
@@ -156,16 +156,16 @@ header .icons a:hover {
     overflow: hidden;
     background: rgba(255, 255, 255, 0.856);
     flex: 1 1 23rem;
+    cursor: pointer;
 }
 .service .box-container .box:hover {
     transform: scale(1.1);
     background: rgba(255, 255, 255, 0.618);
-    cursor: pointer;
 }
 .service .box-container .box img {
-    height: 12rem;
-    width: 12rem;
-    border: .1rem solid var(--black);
+    height: 16rem;
+    width: 16rem;
+    border: .1rem solid rgba(98, 97, 97, 0.723);
     padding: .5rem;
     border-radius: 50%;
     margin-top: 2rem;
@@ -184,6 +184,61 @@ header .icons a:hover {
     color: var(--orang);
     text-transform: capitalize;
 }
+
+/* news style */
+.news .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: url(../Images/fon1.jpeg);
+    background-size: cover;
+    box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
+    border-radius: 1rem;
+}
+.news .box-container .box {
+    border: .1rem solid rgba(142, 139, 139, 0.537);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.856);
+    flex: 1 1 30rem;
+    cursor: pointer;
+}
+.service .box-container .box:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.618);
+}
+.news .box-container .box img {
+    height: 28rem;
+    width: 100%;
+    border: .1rem solid rgba(98, 97, 97, 0.723);
+    border-radius: .5rem;
+}
+.news .box-container .box .container {
+    margin: 1rem;
+}
+.news .box-container .box .container h3 {
+    font-size: 2rem;
+    color: black;
+    margin-top: .5rem;
+    text-transform: capitalize;
+}
+.news .box-container .box .container p {
+    font-size: 1.5rem;
+    color: var(--orang);
+    text-transform: capitalize;
+}
+.news .box-container .box .container i {
+    font-size: 3rem;
+    color: red;
+    position: absolute;
+    right: 3rem;
+    bottom: 1.5rem;
+}
+
+
 
 /* About style */
 .about {
