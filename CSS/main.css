@@ -66,7 +66,7 @@ header .logo span {
     color:var(--orang);
 }
 header .navbar a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     margin: 0 1rem;
 }
@@ -199,11 +199,11 @@ header .icons a:hover {
 .news .box-container .box {
     border: .1rem solid rgba(142, 139, 139, 0.537);
     border-radius: .5rem;
-    text-align: center;
     position: relative;
     overflow: hidden;
+    text-align: center;
     background: rgba(255, 255, 255, 0.856);
-    flex: 1 1 30rem;
+    flex: 1 1 45rem;
     cursor: pointer;
 }
 .service .box-container .box:hover {
@@ -211,8 +211,9 @@ header .icons a:hover {
     background: rgba(255, 255, 255, 0.618);
 }
 .news .box-container .box img {
-    height: 28rem;
-    width: 100%;
+    height: 26rem;
+    width: 46rem;
+    margin-top: 2rem;
     border: .1rem solid rgba(98, 97, 97, 0.723);
     border-radius: .5rem;
 }
@@ -234,7 +235,7 @@ header .icons a:hover {
     font-size: 3rem;
     color: red;
     position: absolute;
-    right: 3rem;
+    right: 1.5rem;
     bottom: 1.5rem;
 }
 
@@ -569,6 +570,9 @@ header .navbar a:hover {
     
     .footer .box-container h3 span {
         font-size: .3rem;
+    }
+    .news-up .box-container .box img {
+        width: 100%;
     }
     }
 }

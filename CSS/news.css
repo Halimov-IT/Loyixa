@@ -1,0 +1,72 @@
+.textH1 {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.textH1 span {
+    color: var(--orang);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* news style */
+.news-up .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: url(../Images/fon1.jpeg);
+    background-size: cover;
+    box-shadow: 0 .5rem 1rem 0 rgba(6, 6, 6, 0.472);
+    border-radius: 1rem;
+}
+.news-up .box-container .box {
+    border: .1rem solid rgba(142, 139, 139, 0.537);
+    border-radius: .5rem;
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.856);
+}
+.news-up .box-container .box img {
+    height: 30rem;
+    width: 50%;
+    border: .1rem solid rgba(98, 97, 97, 0.723);
+    border-radius: .5rem;
+}
+.news-up .box-container .box .container h3 {
+    padding: 4rem 0;
+    font-size: 2rem;
+    color: black;
+    margin-top: .5rem;
+    text-transform: capitalize;
+}
+.news-up .box-container .box .container p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: rgb(82, 80, 80);
+    text-transform: capitalize;
+}
+
+
+/* medio cueries */
+@media (max-width:1024px){
+
+    
+}
+
+@media (max-width:768px){
+
+
+
+@media (max-width:400px){
+
+    
+    .news-up .box-container .box img {
+        width: 100%;
+    }
+    }
+}
